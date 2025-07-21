@@ -25,3 +25,5 @@ else:
             if k==l[-1]:
                 lst4.append(l)
     print(lst4)
+
+print("Program executed successfully")
