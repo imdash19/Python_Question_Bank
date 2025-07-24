@@ -2,28 +2,29 @@
 
 n=int(input("Please enter how many list elements you want: "))
 lst=[]
+print("-"*50)
 
 if(n<=0):
     print("Please enter a valid input")
+    print("-" * 50)
 
 else:
-    print("Enter elements of list")
-    print("-"*30)
     for i in range(1, n+1):
         value=input("Enter {} value: ".format(i))
         lst.append(value)
 
-print("-"*30)
-print(lst)
-print("-"*30)
+    print(lst)
+    print("-" * 50)
 
-m=input("Enter the index of list you want: ")
-print("-"*30)
+    m=int(input("Enter the index value to get the value: "))
+    print("-" * 50)
 
-if(m in lst):
-    print("Index value of {} in {} is {}".format(m, lst, lst.index(m)))
-else:
-    print("{} is not in {}".format(m, lst))
+    if(m >= len(lst) or m < -len(lst)):
+        print("Please enter a valid index number")
+        print("-" * 50)
 
-print("-"*30)
+    else:
+        print("Index of {} in {} is {}".format(m, lst, lst[m]))
+        print("-" * 50)
+
 print("Program executed successfully")
