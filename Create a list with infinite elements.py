@@ -1,7 +1,16 @@
 #Write a PYTHON program to create a list with infinite elements.
 
-lst = [val for val in input("please enter your elements with space: ").split()]
+def infinite():
+    i = 1
+    while True:
+        yield i
+        i += 1
 
-print(lst)
+res = infinite()
+print(next(res))
+
+for val in res:
+    print(val)
+
 print("-"*70)
 print("Program executed successfully")
