@@ -27,7 +27,7 @@ try:
             plst.append(slst)
 
         for i in range(0, len(plst)):
-            if(plst[i] != plst[i-1]):
+            if ((i < len(plst)-1) and (plst[i] != plst[i+1])):
                 elst.append(plst[i])
 
 except ValueError as v:
@@ -45,4 +45,5 @@ else:
     print("-"*70)
 
 finally:
+
     print("Program executed successfully")
