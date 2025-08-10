@@ -18,6 +18,11 @@ except ValueError as v:
     print("Please enter a number: ", v)
     print("-" * 70)
 
+except IndexError as i:
+    print("-" * 70)
+    print("Please enter a valid position: ", i)
+    print("-" * 70)
+
 except Exception as e:
     print("-" * 70)
     print("Something went wrong! Please check again.")
@@ -26,5 +31,6 @@ except Exception as e:
 else:
     print("({}, {})".format(slst, rlst))
     print("-" * 70)
+
 
 finally:print("Program executed successfully.")
