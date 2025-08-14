@@ -5,7 +5,6 @@
 # 	Number of unique lists of the said list: {('green', 'orange'): 2, ('black',): 1, ('white',): 1}
 
 class ZeroNegativeError(Exception):pass
-class SpaceError(Exception): pass
 
 while True:
     try :
@@ -33,10 +32,6 @@ while True:
         print("Don't enter ZERO or -VE number as input. Try again.")
         print("-" * 70)
 
-    except SpaceError:
-        print("Don't enter SPACE for input. Try again.")
-        print("-" * 70)
-
     except ValueError as v:
         print("-" * 70)
         print("Don't enter ALPHABETS, ALPHANUMERICS, SPECIAL SYMBOLS for input. Try again.", v)
@@ -55,4 +50,5 @@ while True:
         break
 
     finally:
+
         print("Program executed successfully")
