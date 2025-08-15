@@ -5,7 +5,7 @@
 class ZeroNegativeError(Exception):
     pass
 
-    while True:
+while True:
     try:
         lst = []
         result = []
@@ -61,3 +61,4 @@ class ZeroNegativeError(Exception):
         print("Program executed successfully.")
 
     print("-" * 70)
+
