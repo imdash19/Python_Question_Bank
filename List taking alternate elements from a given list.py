@@ -7,11 +7,4 @@
 lst= [val for val in input("Please enter your values separated with space: ").split()]
 print("-"*60)
 print("Original list: ", lst)
-for val in lst:
-    try:
-        lst.pop(lst.index(val)+1)
-    except IndexError:
-        res= lst
-    else:
-        res= lst
-print("List with alternate elements from the said list: ", res)
+print("List with alternate elements from the said list: ", lst[::2])
