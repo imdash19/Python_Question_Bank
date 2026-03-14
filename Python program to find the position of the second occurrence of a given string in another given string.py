@@ -1,0 +1,15 @@
+# Write a Python program to find the position of the second occurrence of a given string in another given string. If there is no such string return -1.
+# Sample Input:
+# ("The quick brown fox jumps over the lazy dog", "the")
+# ("the quick brown fox jumps over the lazy dog", "the")
+# Sample Output:
+# -1
+# 31
+
+s = input().strip()[1:-1]
+a, b = s.split('", "')
+
+first = a.find(b)
+second = a.find(b, first + 1)
+
+print(second)
