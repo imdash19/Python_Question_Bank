@@ -1,0 +1,16 @@
+# You need to write a program that checks whether a mobile number entered by the user is valid or not.In this program, a valid mobile number must have exactly 10 digits. It should only contain numbers from 0 to 9 and nothing else. This means no letters (like A, B, C), no spaces, and no special symbols (like +, -, or brackets) are allowed.Here's how the program works: The user will type in a mobile number. Then, the program will check if this number follows the rules mentioned above. Finally, it will tell the user whether the mobile number is valid or invalid.You will use Python's re module (Regular Expressions) to perform this validation. Specifically, you'll use a function called re.fullmatch() which checks if the entire input matches our pattern from start to end.Input Format:
+
+# A single line containing the mobile number entered by the user
+# Output Format:
+
+# Print "Valid mobile number" if the number has exactly 10 digits and nothing else
+# Print "Invalid mobile number" if the number doesn't meet the requirements
+
+import re
+
+mobile = input()
+
+if re.fullmatch(r"\d{10}", mobile):
+    print("Valid mobile number")
+else:
+    print("Invalid mobile number")
