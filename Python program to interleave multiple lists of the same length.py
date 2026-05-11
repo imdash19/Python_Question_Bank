@@ -9,11 +9,14 @@ def interleave_lists(lists):
     return [item for group in zip(*lists) for item in group]
 
 if __name__ == "__main__":
-    n = int(input())
+    n = int(input().split(":")[-1].strip())
 
     lists = []
-    
-    for _ in range(n):
-        lists.append(input().split())
 
-    print(interleave_lists(lists))
+    for _ in range(n):
+        elements = input().split(":")[-1].strip().split()
+        lists.append(elements)
+
+    result = interleave_lists(lists)
+
+    print("Interleaved list:", result)
