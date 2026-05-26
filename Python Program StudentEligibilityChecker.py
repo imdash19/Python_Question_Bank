@@ -1,0 +1,23 @@
+# Create base class Student with method get_attendance(). 
+# Create child class Eligibility that checks eligibility using if condition. 
+# Create another child class Result that prints Eligible or Not Eligible.
+
+class Student:
+    def get_attendance(self):
+        self.attendance = int(input())
+
+class Eligibility(Student):
+    def check_eligibility(self):
+        if self.attendance >= 75:
+            self.status = "Eligible"
+        else:
+            self.status = "Not Eligible"
+
+class Result(Eligibility):
+    def show_result(self):
+        print(self.status)
+
+s = Result()
+s.get_attendance()
+s.check_eligibility()
+s.show_result()
