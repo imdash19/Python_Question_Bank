@@ -1,0 +1,5 @@
+# Reads an integer and formats it as hexadecimal using f-string syntax. Modern approach to hex display formatting.
+
+number = int(input())
+
+print("{:X}".format(number))
