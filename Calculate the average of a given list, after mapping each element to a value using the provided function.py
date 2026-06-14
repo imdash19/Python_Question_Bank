@@ -13,4 +13,4 @@ nums = list(map(int, lst))
 avg_sum = sum(nums) / len(nums)
 
 print(avg_len)
-print(avg_sum)
+print(avg_sum) 
